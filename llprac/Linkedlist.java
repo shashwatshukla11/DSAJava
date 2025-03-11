@@ -196,18 +196,18 @@ public void reverse(){
                         //case1:if contains return true.
                         //case2:if not returns false.
                 
-                // public Boolean hasLoop(){
-                // Node temp=head;
-                // Node pre=head;
-                // while(temp!=null&&temp.next!=null){
-                // temp=temp.next.next;
-                // pre=pre.next;
-                // if(pre==temp){
-                // return true;
-                // }
-                // }
-                // return false;
-                // }
+                public Boolean hasLoop(){
+                Node temp=head;
+                Node pre=head;
+                while(temp!=null&&temp.next!=null){
+                temp=temp.next.next;
+                pre=pre.next;
+                if(pre==temp){
+                return true;
+                }
+                }
+                return false;
+                }
     }
     
 

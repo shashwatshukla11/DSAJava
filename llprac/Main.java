@@ -56,6 +56,7 @@ public class Main {
 
 
 System.out.println("middlenode is:"+ll.middleNode().value);
+System.out.println(ll.hasLoop());
 
 
 
