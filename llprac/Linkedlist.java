@@ -170,6 +170,44 @@ public void reverse(){
     }
 
 }
+
+
+
+//Q1 you have to find the middle node of the linked list?
+     //case1:odd number of elements [1->2->3->4->5]
+         // output should be->3
+     //case2:even number of elements[1->2->3->4->5->6]
+             // in even case the output should be second middle node i.e->4
+
+		
+             public Node middleNode(){
+                Node temp=head;
+                Node pre=head;
+                while(temp!=null&&temp.next!=null){
+                temp=temp.next.next;
+                pre=pre.next;
+                }
+                return pre;
+                }
+                
+                
+                
+                //Q2 to check whether Linked list contains loop or not?
+                        //case1:if contains return true.
+                        //case2:if not returns false.
+                
+                // public Boolean hasLoop(){
+                // Node temp=head;
+                // Node pre=head;
+                // while(temp!=null&&temp.next!=null){
+                // temp=temp.next.next;
+                // pre=pre.next;
+                // if(pre==temp){
+                // return true;
+                // }
+                // }
+                // return false;
+                // }
     }
     
 
